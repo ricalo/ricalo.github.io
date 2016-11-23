@@ -1,8 +1,8 @@
 # Site settings
 title: Ricardo Loo
 description: 'Google Employee - Android Framework'
-url: 'http://ricalo.github.io'
-# baseurl: '/jekyll-uno/'
+url: http://ricalo.github.io
+baseurl: /
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
