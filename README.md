@@ -29,6 +29,10 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 
 Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
 
+## Use with Docker
+docker build -t jekyll .
+docker run -it --publish 4000:4000 --name ricalo-com -v f:\code\ricalo.github.io:/usr/src/app jekyll
+
 ---
 
 ### Demo and Download
