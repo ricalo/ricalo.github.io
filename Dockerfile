@@ -1,6 +1,4 @@
-# docker build -t ricalo-com .
-# docker run -it --rm -e LANG=C.UTF-8 --name "ricalo-com" --publish 4000:4000 ricalo-com jekyll serve --config _config.yml,_config_dev.yml --host 0.0.0.0
+# docker build -t jekyll .
+# docker run -it -e LANG=C.UTF-8 --publish 4000:4000 --name ricalo-com -v f:\code\ricalo.github.io:/usr/src/app jekyll ./bundle_jekyll.sh
 FROM ruby:2.3.1
 WORKDIR /usr/src/app
-RUN ["gem", "install", "bundler"]
-
