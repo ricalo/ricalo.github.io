@@ -3,6 +3,4 @@
 FROM ruby:2.3.1
 WORKDIR /usr/src/app
 RUN ["gem", "install", "jekyll"]
-COPY . /usr/src/app
-RUN ["bundle", "install"]
 
