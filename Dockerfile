@@ -3,4 +3,5 @@
 FROM ruby:2.3.1
 WORKDIR /usr/src/app
 ENV LANG C.UTF-8
-CMD bundle install && jekyll serve --config _config.yml,_config_dev.yml --host 0.0.0.0 --force_polling
+CMD set -x && bundle install && jekyll serve --config _config.yml,_config_dev.yml --force_polling
+
