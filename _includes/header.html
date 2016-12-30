@@ -77,13 +77,15 @@
               </li>
             {% endif %}
 
-            <!-- RSS -->
-            <li class="navigation__item">
-              <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
-                <span class="label">RSS</span>
-              </a>
-            </li>
+            {% if site.feed_icon %}
+              <!-- RSS -->
+              <li class="navigation__item">
+                <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
+                  <i class="icon icon-rss"></i>
+                  <span class="label">RSS</span>
+                </a>
+              </li>
+            {% endif %}
 
             </ul>
           </nav>
