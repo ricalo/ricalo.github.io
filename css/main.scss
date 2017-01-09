@@ -1,5 +1,10 @@
-@import url(uno.css);
-@import url(monokai.css);
+---
+# This is the Front Matter block
+---
+
+@import 'monokai';
+@import 'animate';
+@import 'uno';
 
 /* Modifications */
 
