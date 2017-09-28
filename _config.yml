@@ -1,5 +1,5 @@
 # Site settings
-title: Ricardo Loo
+title: Ricardo Loo Foronda
 description: 'Google Employee - Android Framework'
 url: https://www.ricalo.com
 baseurl: /
@@ -8,7 +8,7 @@ feed_icon: false
 # disqus_shortname: 'your-disqus-name'
 
 author:
-  name: Ricardo Loo
+  name: Ricardo Loo Foronda
   email: me@ricalo.com
   twitter_username: ricalo
   facebook_username: ricalodev
