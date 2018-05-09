@@ -25,13 +25,14 @@ Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://g
 2. Enter the folder: `cd jekyll-uno/`
 3. If you don't have bundler installed: `gem install bundler`
 3. Install Ruby gems: `bundle install`
-4. Start Jekyll server: `bundle exec jekyll serve --watch`
+4. Start Jekyll server: `bundle exec jekyll serve --config
+   _config.yml,_config_dev.yml`
 
 Access via: [http://localhost:4000/jekyll-uno/](http://localhost:4000/jekyll-uno/)
 
 ## Use with Docker
 docker build -t jekyll .
-docker run -it --publish 4000:4000 --name ricalo-com -v f:\code\ricalo.github.io:/usr/src/app jekyll
+docker run -it --publish 4001:4001 --name ricalo-com -v f:\code\ricalo.github.io:/usr/src/app jekyll
 
 ---
 
