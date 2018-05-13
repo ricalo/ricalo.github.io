@@ -1,6 +1,6 @@
 # Site settings
 title: Ricardo Loo Foronda
-description: 'Google Employee - Android Framework'
+description: 'Google Employee—Cloud Platform'
 url: https://www.ricalo.com
 baseurl: /
 google_analytics: UA-58617540-4
@@ -11,7 +11,6 @@ author:
   name: Ricardo Loo Foronda
   email: me@ricalo.com
   twitter_username: ricalo
-  facebook_username: ricalodev
   github_username:  ricalo
   linkedin_username:  ricalo
 
