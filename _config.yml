@@ -46,3 +46,6 @@ repository: ricalo/ricalo.github.io
 sass:
   style: compressed
   sass_dir: _sass
+
+exclude: ['.well-known']
+keep_files: ['.well-known']
