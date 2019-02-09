@@ -5,4 +5,5 @@ _site
 *.sublime-workspace
 .DS_Store
 public
+!public/.well-known
 test
