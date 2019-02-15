@@ -223,4 +223,3 @@ I hope this is article helps you increase the quality of your apps that use
 Microsoft Graph.
 
 Happy testing!
-

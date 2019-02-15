@@ -17,8 +17,8 @@ comments: true
 In the last few years I've been trying to setup and maintain web development
 environments across Windows, Mac, and Linux. While there are some tools that
 work most of the time, I was looking for something that requires less
-maintenance, is easier to setup, and available on-demand while still allowing
-me to use my favorite text editors on my host computers.
+maintenance, is easier to setup, and available on-demand while still allowing me
+to use my favorite text editors on my host computers.
 
 The answer for me was to setup my environment on Docker containers. In this
 article I'll explain how to setup a local development environment for your
@@ -40,40 +40,29 @@ project, do the following:
   * port: 4000
 2. In your terminal, go to the root folder of your project, then type:
 
-``` bash
-docker run \
-  --tty \
-  --name your_container \
-  --publish 4000:4000 \
-  --restart unless-stopped \
-  --volume $(pwd):/usr/src/app \
-  ricalo/jekyll \
-  serve --config _config.yml,_config_dev.yml
-```
+   ``` bash
+   docker run \
+     --tty \
+     --name your_container \
+     --publish 4000:4000 \
+     --restart unless-stopped \
+     --volume $(pwd):/usr/src/app \
+     ricalo/jekyll \
+     serve --config _config.yml,_config_dev.yml
+   ```
 
-> **Note:** On Windows, use the following command:
-> ``` bash
-> docker run \
->   --tty \
->   --name your_container \
->   --publish 4000:4000 \
->   --restart unless-stopped \
->   --volume c:\path\to\root:/usr/src/app \
->   ricalo/jekyll \
->   serve --config _config.yml,_config_dev.yml --force_polling
-> ```
+   If you're using Windows, replace `$(pwd)` with the path to the root folder.
 
-
-You can edit the files on your host, the container will detect changes and
+When you edit the files on your host, the container detects changes and
 automatically publish them to your *localhost* server. Go to
 `http://localhost:4000` on your browser to see your Jekyll site.
 
-## Setup your development environment for Jekyll projects
+## Set up your development environment for Jekyll projects
 
-In the previous section, I quickly showed how to get your container up-and
-running without further explanation. In this section, we'll visit the relevant
-options. This should help you understand how to use the same concepts with
-other web technologies. We'll review the following aspects of the solution:
+In the previous section, I quickly showed how to get your container
+up-and-running without further explanation. In this section, we'll visit the
+relevant options. This should help you understand how to use the same concepts
+with other web technologies. We'll review the following aspects of the solution:
 
 * Jekyll development configuration file
 * Jekyll Docker image
@@ -256,5 +245,4 @@ containers. By using containers, you can setup a cross-platform development
 environment that is easy to maintain and always available.
 
 You should be able to expand the lessons learned in this article to other
-platforms, like Node.js or PHP. Let me know in the comments if you have any
-suggestions of questions.
+platforms, like Node.js or PHP.

@@ -117,4 +117,3 @@ in.
 
 Talking about tools, I have found a few that let me just be productive in any
 OS. But I'll leave that for another post.
-

@@ -305,7 +305,6 @@ To add a build step that executes the connectedCheck task follow these steps:
 4. In the **Tasks** textbox type **connectedCheck**.
 
 You're ready! Now go and click that **Queue build...** button and watch your
-test automatically running in your emulators.
+test run in your emulators.
 
 Enjoy!
-
