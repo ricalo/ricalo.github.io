@@ -10,12 +10,11 @@ author:
   name: Ricardo Loo Foronda
   email: me@ricalo.com
   twitter_username: ricalo
-  github_username:  ricalo
-  linkedin_username:  ricalo
+  github_username: ricalo
+  linkedin_username: ricalo
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ''
       type: 'posts'
     values:
