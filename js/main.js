@@ -6,6 +6,10 @@ sitemap:
 
 $(document).ready(function () {
   $('a.blog-button').click(function (e) {
+    // Do not open the blog panel if the blog is in another domain.
+    let blog_domain = new URL($('a.blog-button').prop('href')).hostname;
+    if (blog_domain !== document.domain ) return
+
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
     currentWidth = $('.panel-cover').width()
     if (currentWidth < 960) {
