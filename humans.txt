@@ -5,16 +5,16 @@ exclude: 'yes'
 ---
 
 /* TEAM */
-Developer & Designer: Josh Gerdes
-Twitter: @joshgerdes
-Site: http://joshgerdes.com
-Location: Minneapolis, MN, USA
-						
+Ricardo Loo Foronda
+Twitter: @ricalo
+Site: http://ricalo.com
+Location: New York, NY, USA
+
 /* THANKS */
-Name: Dale Anthony
+Name: Josh Gerdes (for the Jekyll-Uno theme)
 
 /* SITE */
 Last update: {{ site.time | date: "%Y/%m/%d" }}
 Standards: HTML5, CSS3
 Components: Jekyll
-Software: Sublime Text, Photoshop
+Software: Neovim
