@@ -20,7 +20,7 @@ test:
     paths:
     - test
   except:
-  - master
+  - prod
 
 pages:
   stage: deploy
@@ -30,4 +30,4 @@ pages:
     paths:
     - public
   only:
-  - master
+  - prod
