@@ -1,0 +1,11 @@
+session_name: ricalo
+start_directory: ./
+windows:
+  - layout: main-vertical
+    panes:
+    - vi
+    - shell_command:
+      - tmux setw main-pane-width 140
+      - tmux selectl main-vertical
+      - clear
+      - ./start-server
